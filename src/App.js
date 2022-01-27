@@ -1,8 +1,13 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import header from './Components/header/header';
+import landing from './Components/landing-page/landing-page';
+import search from './Components/search/search';
+import video from'./Components/video-card/video-card';
+import React, { useState, useEffect } from 'react';
 
+const apiKey = process.env.REACT_APP_API_KEY
+console.log(apiKey)
 function App() {
-  const apiKey ='de804da427140e75c52bb7138208bf26'
 
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`)
