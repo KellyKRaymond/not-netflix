@@ -1,0 +1,7 @@
+.comingsoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 180px;
+    border: black 2px;
+}
