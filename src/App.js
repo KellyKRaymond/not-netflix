@@ -8,9 +8,9 @@ import React, { useState, useEffect } from 'react';
 
 const apiKey = process.env.REACT_APP_API_KEY
 
-let movieTitle = 'spiderman'
-let movieID = 634649 
 
+let movieID = 634649 
+let movieTitle = setMovieTitle('Spiderman')
 function App() {
   const [movieTitle, setMovieTitle] = useState([]);
   
@@ -22,7 +22,7 @@ function App() {
 
   return (
       <div className="App">
-        <h1> this is a test </h1>
+        <h1> someone save me </h1>
     </div>
   );
 }

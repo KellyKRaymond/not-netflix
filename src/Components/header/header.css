@@ -1,5 +1,10 @@
-.headerText {
+.nav-container {
     border: black 2px;
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
     width: 100px;
     height: 100px;
 }
