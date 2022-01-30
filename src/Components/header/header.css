@@ -1,10 +1,12 @@
 .nav-container {
     border: black 2px;
-    width: 100px;
-    height: 100px;
+    width: 800px;
+    height: 800px;
+    background-color: blueviolet;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 1000px;
+    height: 1000px;
+    padding: 100px;
 }

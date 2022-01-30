@@ -3,6 +3,8 @@ import './search.css';
 
 export default function search(){
     return (
-    <div> ello mate </div>
+        <div className='search'>
+        </div>
     )
 }
+      
