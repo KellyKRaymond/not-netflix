@@ -17,7 +17,6 @@ function App() {
         <Landing/>
         <Search />
         <Video/>
-        <h1> someone save me </h1>
       </div>
     </div>
   );

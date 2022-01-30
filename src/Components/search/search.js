@@ -4,8 +4,6 @@ import './search.css';
 export default function Search(){
     return (
     <div className="Search-Container">
-        <div className='search'>
-    </div>
     </div>
     )
 }
