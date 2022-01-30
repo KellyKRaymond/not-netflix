@@ -1,12 +1,25 @@
-.nav-container {
-    border: black 2px;
-    width: 800px;
-    height: 800px;
-    background-color: blueviolet;
+.logo {
+    justify-content: right;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
 }
 
-.logo {
-    width: 1000px;
-    height: 1000px;
-    padding: 100px;
+.nav-container {
+    background-color: #3d363744;
+}
+
+.header {
+    width: fit-content;
+    height: 90px;
+  }
+
+.header-list {
+    font-size: 33px;
+    color: rgb(243, 232, 243);
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: right;
 }

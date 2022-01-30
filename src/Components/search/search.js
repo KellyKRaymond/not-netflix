@@ -1,10 +1,12 @@
 import React, {useState} from "react";
 import './search.css';
 
-export default function search(){
+export default function Search(){
     return (
+    <div className="Search-Container">
         <div className='search'>
-        </div>
+    </div>
+    </div>
     )
 }
       
