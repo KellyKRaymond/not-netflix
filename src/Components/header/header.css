@@ -16,10 +16,11 @@
   }
 
 .header-list {
-    font-size: 33px;
+    font-size: 23px;
     color: rgb(243, 232, 243);
     display: flex;
     padding: 15px;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
+    width: 1200px
 }
