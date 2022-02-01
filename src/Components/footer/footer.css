@@ -1,7 +1,12 @@
-.footer {
+.footerContainer {
     font-size: 7px;
     padding: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
 
+}
+
+#appIcons {
+    height: 100px;
+    width: 100px;
 }
