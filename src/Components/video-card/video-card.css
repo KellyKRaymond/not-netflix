@@ -1,0 +1,9 @@
+video-card {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    height: 5%;
+    width: 5%;
+}

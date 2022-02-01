@@ -1,11 +1,9 @@
 .logo {
     justify-content: right;
-    align-items: center;
     width: 100px;
     height: 100px;
     padding: 10px;
 }
-
 .nav-container {
     background-color: #3d363744;
 }
@@ -17,10 +15,14 @@
 
 .header-list {
     font-size: 23px;
-    color: rgb(243, 232, 243);
-    display: flex;
+    color: rgb(221, 204, 221);
     padding: 15px;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 1200px
+}
+
+.search-bar {
+    border: pink 2px;
+    color: purple;
 }

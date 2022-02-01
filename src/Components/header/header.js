@@ -11,6 +11,9 @@ export default function Header() {
                 <a> Kids </a>
                 <a> My List </a>
             </div>
+            <div className="search-bar">
+                <input type='text'placeholder="Seach Videos Here..."></input>
+            </div>
             <img className="logo" src={notnetflixlogo}>
             </img>
         </div>

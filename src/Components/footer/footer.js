@@ -4,7 +4,7 @@ import './footer.css'
 export default function Footer() {
     return (
     <div className="footer"> 
-        <h1> whaddup world?????</h1>
+        <h1> FAQ Cookie Preferences Help Center Corporate Information Terms Of Use Privacy  </h1>
     </div>
     )
 }
