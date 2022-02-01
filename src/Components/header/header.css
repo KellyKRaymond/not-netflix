@@ -1,9 +1,3 @@
-.logo {
-    justify-content: right;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-}
 .nav-container {
     background-color: #3d363744;
 }
@@ -21,8 +15,16 @@
     align-items: center;
     justify-content: flex-end;
 }
-
+.logo {
+    display:flex;
+    justify-content: left;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
 .search-bar {
-    border: pink 2px;
-    color: purple;
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    margin-right: 5px;
 }

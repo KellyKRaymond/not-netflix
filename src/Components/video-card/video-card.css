@@ -1,9 +1,11 @@
-video-card {
+.video-card {
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 15px;
-    height: 5%;
-    width: 5%;
+    height: 300px;
+    width: 300px;
+}
+
+.video-card img {
+    height: 200px;
+    width: 200px;
 }

@@ -1,12 +1,15 @@
 .landing-container {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    border: purple 2px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .fillerImg {
     width: 800px;
     height: 600px;
     padding: 10px;
+}
+
+.videoRow {
+    display: flex;
+    flex-wrap: wrap;
 }

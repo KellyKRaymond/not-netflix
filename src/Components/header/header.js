@@ -10,12 +10,11 @@ export default function Header() {
                 <a> TV Shows </a>
                 <a> Kids </a>
                 <a> My List </a>
+                <img className="logo" src={notnetflixlogo}></img>
             </div>
             <div className="search-bar">
                 <input type='text'placeholder="Seach Videos Here..."></input>
             </div>
-            <img className="logo" src={notnetflixlogo}>
-            </img>
         </div>
     )
 }

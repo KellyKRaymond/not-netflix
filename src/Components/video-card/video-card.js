@@ -2,7 +2,6 @@ import React from "react";
 import './video-card.css';
 
 export default function VideoCard(props) {
-    console.log(props)
     return (
         <div className="video-card">
             <div> {props.movie.title} </div>

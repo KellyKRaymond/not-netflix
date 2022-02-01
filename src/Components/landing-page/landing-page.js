@@ -1,4 +1,4 @@
-import React, {useEffect , useState} from "react";
+import React, { useEffect, useState } from "react";
 import filler from '../../assets/filler.jpg';
 import VideoCard from '../video-card/video-card';
 import Footer from '../footer/footer';
@@ -18,12 +18,13 @@ export default function Landing() {
             .then(res => setMovies(res.results))
     }, [])
 
-        return (
-        
-            <div className="landing-container">
-                <div> hello world </div>
-                <img className="fillerImg" src={filler} ></img>
+    return (
+
+        <div className="landing-container">
+            <img className="fillerImg" src={filler} ></img>
+            <div className="videoRow">
                 ({movies.map(movie => <VideoCard key={movie} movie={movie} />)})
             </div>
-        )
+        </div>
+    )
 }
