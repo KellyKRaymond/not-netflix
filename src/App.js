@@ -21,10 +21,10 @@ console.log(searchString)
         </div>
         <Routes>
           <Route path = '/' element={<Landing searchString={searchString}/>}/>
+          <Route path = '/movie/:id' element={<Clicked/>}/>
           <Route path = '/movies' element={<Movie/>}/>
           <Route path = '/tv-shows' element={<TV/>}/>
           <Route path = '/family' element={<Family/>}>
-          <Route path = '/movie/:id' element={<Clicked/>}/>
           </Route>
         </Routes>
           <div>

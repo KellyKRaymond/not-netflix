@@ -1,21 +1,22 @@
 import React from "react";
 import './clicked-video.css';
-import {usedParams, useParams} from 'react-router-dom';
-import { useState , useEffect} from "react/cjs/react.development";
+import { usedParams, useParams } from 'react-router-dom';
+import { useState, useEffect } from "react";
 import VideoCard from "../video-card/video-card";
 
-export default function Clicked(){
-    const {id} = useParams();
-    const {movie, setMovie} = useState(null);
+const apiKey = process.env.REACT_APP_API_KEY
 
-    useEffect(() => {
-        fetchMovieData(`/movie/${id}`)
-        setMovie(res)
-        .then(res => {
-    });
-    },[id])
-    return(
-        <VideoCard movie={movie}/>
-    )
+export default function Clicked() {
+    const { id } = useParams();
+    const { movie, setMovie } = useState(null);
+
+    const overview = this.props.location.useState
+    const poster_path = this.props.location.useState
+
+    return movie && <div key={movie.id}>
+        <>
+            <h1>{movie.title}</h1>
+            <h2>{movie.tagline}</h2>
+        </>
+    </div>
 }
-    

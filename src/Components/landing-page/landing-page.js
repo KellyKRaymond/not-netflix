@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-
 import filler from '../../assets/filler.jpg';
 import VideoCard from '../video-card/video-card';
-import Footer from '../footer/footer';
 import './landing-page.css';
 
 const apiKey = process.env.REACT_APP_API_KEY
@@ -25,12 +23,6 @@ export default function Landing(props) {
             .then(res => setMovies(res.results))
         }
     }, [props.searchString])
-
-    useEffect(() => {
-        fetch(`https://www.themoviedb.org/genre/10751-family/movie/?api_key=${apiKey}&language=en-US`)
-            .then(res => res.json())
-            .then(res = (setKids(res.results)))
-    }, [])
 
 console.log(movies)
     return (

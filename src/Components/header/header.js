@@ -24,7 +24,6 @@ const searchForMovie = () =>{
                 <input type='text' value={value} onChange={(e)=> setValue(e.target.value)} placeholder="Seach Videos Here..."></input>
                 <button onClick={searchForMovie} className="magnifyGlass"><GoSearch /></button>
             </div>
-
             </div>
         </div>
     )
