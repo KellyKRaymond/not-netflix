@@ -4,7 +4,9 @@ import Header from './Components/header/header';
 import Footer from './Components/footer/footer';
 import Landing from './Components/landing-page/landing-page';
 import Clicked from './Components/clicked-video-page/clicked-video';
-
+import Movie from "./Components/movie/movie";
+import Family from "./Components/Family/family";
+import TV from "./Components/tv-shows/tv-shows";
 
 import './App.css';
 
@@ -19,9 +21,9 @@ console.log(searchString)
         </div>
         <Routes>
           <Route path = '/' element={<Landing searchString={searchString}/>}/>
-          <Route path = '/Movies' element={<Movies/>}/>
-          <Route path = '/TV Shows' element={<TvShows/>}/>
-          <Route path = '/Kids' element={<Kids/>}>
+          <Route path = '/movies' element={<Movie/>}/>
+          <Route path = '/tv-shows' element={<TV/>}/>
+          <Route path = '/family' element={<Family/>}>
           <Route path = '/movie/:id' element={<Clicked/>}/>
           </Route>
         </Routes>
