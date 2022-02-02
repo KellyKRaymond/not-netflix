@@ -1,14 +1,21 @@
 import React from "react";
 import './clicked-video.css';
 import {usedParams, useParams} from 'react-router-dom';
-import { useState } from "react/cjs/react.development";
+import { useState , useEffect} from "react/cjs/react.development";
+import VideoCard from "../video-card/video-card";
 
 export default function Clicked(){
     const {id} = useParams();
-    const {movie, setMovie} = useState({});
-    fetchMovieData(`/movie/${id}`)
+    const {movie, setMovie} = useState(null);
+
+    useEffect(() => {
+        fetchMovieData(`/movie/${id}`)
+        setMovie(res)
+        .then(res => {
+    });
+    },[id])
     return(
-        <div> elo </div>
+        <VideoCard movie={movie}/>
     )
 }
     
