@@ -1,5 +1,7 @@
 .nav-container {
     background-color: #3d363744;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header {
@@ -16,15 +18,18 @@
     justify-content: flex-end;
 }
 .logo {
-    display:flex;
-    justify-content: left;
     width: 100px;
     height: 100px;
     padding: 10px;
 }
 .search-bar {
     display: flex;
+    align-items: center;
     justify-content: right;
     padding: 10px;
     margin-right: 5px;
+}
+
+.header-list a {
+    padding: 10px;
 }

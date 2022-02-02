@@ -12,19 +12,18 @@ const searchForMovie = () =>{
 }
     return (
         <div className="nav-container">
+            <div>
+            <img className="logo" src={notnetflixlogo}></img>
+            </div>
             <div className="header-list">
                 <a> Movies </a>
                 <a> TV Shows </a>
-                <a> Kids </a>
+                <a> Family </a>
                 <a> My List </a>
-                <img className="logo" src={notnetflixlogo}></img>
-            </div>
-            <div className="search-bar">
+                <div className="search-bar">
                 <input type='text' value={value} onChange={(e)=> setValue(e.target.value)} placeholder="Seach Videos Here..."></input>
-            
                 <button onClick={searchForMovie} className="magnifyGlass"><GoSearch /></button>
-
-
+            </div>
 
             </div>
         </div>

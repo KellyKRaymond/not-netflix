@@ -5,8 +5,10 @@
     color: whitesmoke;
 
 }
-
-#appIcons {
-    height: 100px;
-    width: 100px;
+.appIcons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: whitesmoke;
+    font-size: 25px;
 }

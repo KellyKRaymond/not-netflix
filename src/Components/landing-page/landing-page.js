@@ -10,6 +10,7 @@ const apiKey = process.env.REACT_APP_API_KEY
 export default function Landing(props) {
     const [movies, setMovies] = useState([]);
     const [videoCard, setVideoCard] = useState([]);
+    const [kids, setKids] = useState([]);
 
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=en-US`)
@@ -24,6 +25,13 @@ export default function Landing(props) {
             .then(res => setMovies(res.results))
         }
     }, [props.searchString])
+
+    useEffect(() => {
+        fetch(`https://www.themoviedb.org/genre/10751-family/movie/?api_key=${apiKey}&language=en-US`)
+            .then(res => res.json())
+            .then(res = (setKids(res.results)))
+    }, [])
+
 console.log(movies)
     return (
         <div className="landing-container">
@@ -34,5 +42,3 @@ console.log(movies)
         </div>
     )
 }
-
-// https://api.themoviedb.org/3/discover/movie?api_key=$%7BapiKey%7D&language=en-US&sort_by=popularity.desc&with_genres=$%7BgenreId%7D`)

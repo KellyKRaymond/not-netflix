@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div className="footerContainer">
             <h1> FAQ Cookie Preferences Help Center Corporate Information Terms Of Use Privacy  </h1>
-            <div id="appIcons">
+            <div className="appIcons">
                 <div className="Twitter"><SiTwitter /></div>
                 <div className="Netflix"><SiNetflix /></div>
             </div>
