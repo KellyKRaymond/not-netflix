@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   const [searchString, setSearchString] = useState('');
-console.log(searchString)
+
   return (
     <Router>
       <div>

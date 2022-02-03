@@ -17,6 +17,13 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+.header-list:hover {
+    filter: brightness(1.2);
+}
+
+
+
 .logo {
     width: 100px;
     height: 100px;
