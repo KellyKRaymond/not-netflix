@@ -1,12 +1,12 @@
 import React from "react";
 import './single-video-page.css';
-import { useParams , useLocation } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { useState, useEffect } from "react";
 // import { fetchMovieData } from "../../NetworkConnections";
 import VideoCard from "../video-card/video-card";
 
 
-export default function SingleVideoPage({movie}) {
+export default function SingleVideoPage({ movie }) {
     // const { id } = useParams();
     // const { movie, setMovie } = useState(null);
     // useEffect(() => {
@@ -15,8 +15,17 @@ export default function SingleVideoPage({movie}) {
     //             setMovie(res)
     //         });
     // }, [id])
-    
-    let data = useLocation() 
+
+    let data = useLocation()
     movie = data.state.movie
-    return <VideoCard movie={movie} single={true} />
+    return (
+        <div>
+            <VideoCard movie={movie} single={true} />
+            <div className="movie-details">
+                <h1> {movie.title} </h1>
+                <h2> {movie.release_date} </h2>
+                <h2> {movie.overview} </h2>
+            </div>
+        </div>
+    )
 }

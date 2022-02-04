@@ -18,6 +18,7 @@ function App() {
       <div>
         <div>
           <Header setSearchString={setSearchString} />
+         
         </div>
         <Routes>
           <Route path = '/' element={<Landing searchString={searchString}/>}/>
@@ -28,7 +29,7 @@ function App() {
           </Route>
         </Routes>
           <div>
-            <Footer/>
+            
           </div>
       </div>
     </Router>

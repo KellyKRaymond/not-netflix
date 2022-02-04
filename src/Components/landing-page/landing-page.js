@@ -28,7 +28,7 @@ export default function Landing(props) {
 console.log(movies)
     return (
         <div className="landing-container">
-            <img className="fillerImg" src={filler} ></img>
+            <img className="banner" src={`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=en-US`} ></img>
             <div className="videoRow">
                 ({movies.map(movie => <VideoCard key={movie.id} movie={movie} />)})
             </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GoSearch } from 'react-icons/go'
 import './header.css';
 import notnetflixlogo from '../../assets/notnetflixlogo.png'
+import { Link } from "react-router-dom";
 
 export default function Header(props) {
 const [value, setValue] = useState('')
@@ -13,7 +14,7 @@ const searchForMovie = () =>{
     return (
         <div className="nav-container">
             <div>
-            <img className="logo" src={notnetflixlogo}></img>
+            <Link to='/'><img className="logo" src={notnetflixlogo}></img></Link>
             </div>
             <div className="header-list">
                 <a> Movies </a>
