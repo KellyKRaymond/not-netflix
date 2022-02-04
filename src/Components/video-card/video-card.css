@@ -11,3 +11,7 @@
     width: 220px;
     padding:30px;
 }
+
+.video-card :hover  {
+    filter:saturate(2.0)
+}

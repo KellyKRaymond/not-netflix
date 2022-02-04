@@ -15,8 +15,10 @@ const [family, setFamily] = useState([]);
     
     return(
         <>
+        <h1> hi family friendly videos! </h1>
         <div className="family-container"></div>
             ({family.map(family => <VideoCard key={family.id} family={family} />)})
+            
         </>
 
     )

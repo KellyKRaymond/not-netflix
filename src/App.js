@@ -4,7 +4,7 @@ import Header from './Components/header/header';
 import Footer from './Components/footer/footer';
 import Landing from './Components/landing-page/landing-page';
 import SingleVideoPage from './Components/single-video-page/single-video-page';
-import Movie from "./Components/movie/movie";
+import Movie from "./Components/movies/movies";
 import Family from "./Components/Family/family";
 import TV from "./Components/tv-shows/tv-shows";
 

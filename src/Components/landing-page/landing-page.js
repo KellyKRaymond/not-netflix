@@ -9,7 +9,6 @@ const apiKey = process.env.REACT_APP_API_KEY
 export default function Landing(props) {
     const [movies, setMovies] = useState([]);
     const [videoCard, setVideoCard] = useState([]);
-    const [kids, setKids] = useState([]);
 
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=en-US`)

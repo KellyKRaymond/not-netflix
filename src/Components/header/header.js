@@ -17,10 +17,10 @@ const searchForMovie = () =>{
             <Link to='/'><img className="logo" src={notnetflixlogo}></img></Link>
             </div>
             <div className="header-list">
-                <a> Movies </a>
-                <a> TV Shows </a>
-                <a> Family </a>
-                <a> My List </a>
+            <Link to='/movies'>Movies</Link> 
+            <Link to='/tv-Shows'> TV Shows</Link> 
+            <Link to='/Family'> Family </Link>    
+            <Link to='/MyList'> My List</Link>  
                 <div className="search-bar">
                 <input type='text' value={value} onChange={(e)=> setValue(e.target.value)} placeholder="Seach Videos Here..."></input>
                 <button onClick={searchForMovie} className="magnifyGlass"><GoSearch /></button>
