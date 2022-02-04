@@ -11,18 +11,16 @@
 
 .header-list {
     font-size: 23px;
-    color: rgb(221, 204, 221);
+    color: rgb(204, 200, 204);
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.header-list:hover {
-    filter: brightness(1.2);
+.header-list a:hover  {
+    filter: brightness(2.2);
 }
-
-
 
 .logo {
     width: 100px;

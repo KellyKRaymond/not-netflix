@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import filler from '../../assets/filler.jpg';
 import VideoCard from '../video-card/video-card';
 import './landing-page.css';
+// import { fetchMovieData } from "../../NetworkConnections";
 
 const apiKey = process.env.REACT_APP_API_KEY
 
