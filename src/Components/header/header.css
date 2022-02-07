@@ -18,8 +18,14 @@
     justify-content: flex-end;
 }
 
-.header-list a:hover  {
+.textFormatted {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.textFormatted:hover  {
     filter: brightness(2.2);
+    color: #E50914;
 }
 
 .header-list:active {

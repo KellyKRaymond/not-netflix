@@ -1,5 +1,5 @@
 import React, { useDebugValue, useEffect, useState } from "react";
-import filler from '../../assets/filler.jpg';
+import banner from '../../assets/banner.jpg';
 import VideoCard from '../video-card/video-card';
 import './landing-page.css';
 // import { fetchMovieData } from "../../NetworkConnections";
@@ -31,15 +31,12 @@ export default function Landing(props) {
 
     })
 
-
-
-
 console.log(movies)
     return (
         <div className="landing-container">
-            <img className="latest-banner" src={filler.jpg} ></img>
+           <img className="latest-banner" src={banner} ></img>
             <div className="videoRow">
-                ({movies.map(movie => <VideoCard key={movie.id} movie={movie} />)})
+                {movies.map(movie => <VideoCard key={movie.id} movie={movie} />)}
             </div>
         </div>
     )
