@@ -5,8 +5,10 @@ import { useState, useEffect } from "react";
 // import { fetchMovieData } from "../../NetworkConnections";
 import VideoCard from "../video-card/video-card";
 
+const apiKey = process.env.REACT_APP_API_KEY
 
 export default function SingleVideoPage({ movie }) {
+    const [trailer, setTrailer] = useState([])
     // const { id } = useParams();
     // const { movie, setMovie } = useState(null);
     // useEffect(() => {
@@ -16,6 +18,12 @@ export default function SingleVideoPage({ movie }) {
     //         });
     // }, [id])
 
+    useEffect(() => {
+        fetch(`https://api.themoviedb.org/3/movie/${movie}/videos?api_key=${apiKey}&language=en-US`)    
+            .then(res => res.json())
+            .then(res => setTrailer(res.results))
+    })
+
     let data = useLocation()
     movie = data.state.movie
     return (
@@ -23,8 +31,8 @@ export default function SingleVideoPage({ movie }) {
             <VideoCard movie={movie} single={true} />
             <div className="movie-details">
                 <h1> {movie.title} </h1>
-                <h2> {movie.release_date} </h2>
                 <h2> {movie.overview} </h2>
+                <h3> {movie.release_date} </h3>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useDebugValue, useEffect, useState } from "react";
 import filler from '../../assets/filler.jpg';
 import VideoCard from '../video-card/video-card';
 import './landing-page.css';
@@ -8,7 +8,7 @@ const apiKey = process.env.REACT_APP_API_KEY
 
 export default function Landing(props) {
     const [movies, setMovies] = useState([]);
-    const [videoCard, setVideoCard] = useState([]);
+    const [latest, setLatest] = useState([]);
 
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=en-US`)
@@ -24,10 +24,20 @@ export default function Landing(props) {
         }
     }, [props.searchString])
 
+    useEffect(() => {
+        fetch(`https://api.themoviedb.org/3/trending/movie/latest?api_key=${apiKey}&language=en-US=${props.latest}`)
+            .then(res => res.json())
+            .then(res => setLatest(res.results))
+
+    })
+
+
+
+
 console.log(movies)
     return (
         <div className="landing-container">
-            <img className="banner" src={`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=en-US`} ></img>
+            <img className="latest-banner" src={filler.jpg} ></img>
             <div className="videoRow">
                 ({movies.map(movie => <VideoCard key={movie.id} movie={movie} />)})
             </div>
