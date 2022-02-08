@@ -13,6 +13,9 @@ import './App.css';
 function App() {
   const [searchString, setSearchString] = useState('');
 
+  // the return below shows where when you click on something the 
+  //program is rerouting your web browser search bar 
+
   return (
     <Router>
       <div>

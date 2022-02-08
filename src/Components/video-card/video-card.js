@@ -1,22 +1,11 @@
 
 import React from "react";
-import { useParams } from 'react-router-dom';
-import { useState, useEffect } from "react";
-// import { fetchMovieData } from "../../NetworkConnections";
 import './video-card.css'
 import { Link } from "react-router-dom";
 
 const apiKey = process.env.REACT_APP_API_KEY
 
 export default function VideoCard({ movie }) {
-    // const { id } = useParams();
-    // const { movie, setMovie } = useState(null);
-    // useEffect(() => {
-    //     fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=en-US`)
-    //         .then(res => {
-    //             setMovie(res)
-    //         });
-    // }, [id])
 
     return (
         <div>

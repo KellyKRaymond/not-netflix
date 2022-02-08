@@ -14,7 +14,7 @@ export default function Movie (){
     console.log(movies)
     return (
         <div className="moviePage">
-            <h1> Not Family Friendly Movies! </h1>
+            <h1> Tv Shows </h1>
             <div className="videoRow">
             {movies.map(movie => <VideoCard key={movie.id} movie={movie} />)}
             </div>

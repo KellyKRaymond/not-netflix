@@ -23,7 +23,7 @@ export default function Family() {
     console.log(movies)
     return (
         <div className="familyPage">
-            <h1> Movies </h1>
+            <h1> Family Friendly Movies </h1>
             <div className="videoRow">
             {movies.map(family => <VideoCard key={family.id} movie={family} />)}
             </div>
