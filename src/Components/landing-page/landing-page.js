@@ -1,4 +1,4 @@
-import React, { useDebugValue, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import banner from '../../assets/banner.jpg';
 import VideoCard from '../video-card/video-card';
 import './landing-page.css';

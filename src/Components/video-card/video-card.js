@@ -3,6 +3,8 @@ import React from "react";
 import './video-card.css'
 import { Link } from "react-router-dom";
 
+// env file - & gitignore - show on github why we use this 
+
 const apiKey = process.env.REACT_APP_API_KEY
 
 export default function VideoCard({ movie }) {
