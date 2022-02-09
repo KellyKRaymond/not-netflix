@@ -24,12 +24,12 @@ export default function Landing(props) {
         }
     }, [props.searchString])
 
-    useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/trending/movie/latest?api_key=${apiKey}&language=en-US=${props.latest}`)
-            .then(res => res.json())
-            .then(res => setLatest(res.results))
+    // useEffect(() => {
+    //     fetch(`https://api.themoviedb.org/3/trending/movie/latest?api_key=${apiKey}&language=en-US=${props.latest}`)
+    //         .then(res => res.json())
+    //         .then(res => setLatest(res.results))
 
-    })
+    // })
 
 console.log(movies)
     return (
