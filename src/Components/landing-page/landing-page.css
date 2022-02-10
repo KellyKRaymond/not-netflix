@@ -1,15 +1,19 @@
 .landing-container {
-    max-width: 1200px;
+    max-width: 2100px;
     margin: auto;
 }
 
 .latest-banner {
-    width: 1000px;
-    height: 600px;
+    height: 800px;
     padding: 40px;
+    background-image: url(../../assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .videoRow {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: scroll;
+    
 }

@@ -12,7 +12,6 @@ export default function VideoCard({ movie }) {
     return (
         <div>
             <div className="video-card">
-                <div> {movie.title} </div>
                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={`movie poster of ${movie.title}`} />
                 <Link to={`/movie/${movie.id}`} state={{ movie }}>
                     <button> click this </button>
