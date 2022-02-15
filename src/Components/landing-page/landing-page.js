@@ -12,12 +12,21 @@ export default function Landing(props) {
     const [comedy, setComedy] = useState([]);
     const [romance,setRomance] = useState([]);
 
+
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=en-US`)
+        fetch(`https://api.themoviedb.org/3/movie/latest?api_key=${apiKey}&language=en-US`)
             .then(res => res.json())
-            .then(res => setMovies(res.results))
+            .then(res => setLatest(res.results))
     }, [])
-    console.log(movies)
+
+
+
+    // useEffect(() => {
+    //     fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=en-US`)
+    //         .then(res => res.json())
+    //         .then(res => setMovies(res.results))
+    // }, [])
+    // console.log(movies)
 
     useEffect(() => {
         if(props.searchString){
@@ -25,6 +34,7 @@ export default function Landing(props) {
             .then(res => res.json())
             .then(res => setMovies(res.results))
         }
+        console.log(latest)
     }, [props.searchString])
 
     useEffect(() => {
@@ -48,7 +58,9 @@ export default function Landing(props) {
 console.log(movies)
     return (
         <div className="landing-container">
-               <div className="latest-banner" ></div>
+               {/* <div className="latest-banner">
+               {latest.map(movie => <VideoCard key={movie.id} movie={movie} />)}
+               </div> */}
                <h1> Trending Movies</h1>
             <div className="videoRow">
                 {movies.map(movie => <VideoCard key={movie.id} movie={movie} />)}
